@@ -115,7 +115,7 @@ hr{
     left:0px
     
 }
-.navbar-menu ul li:hover a::after{
+.navbar-menu ul li:hover>a::after{
     animation-name:animation-navbar;
     animation-duration: 0.5s;
     animation-timing-function: linear;
@@ -129,3 +129,35 @@ hr{
         width: 100%;
     }
 }
+li#navbar-sale:hover #navbar-sale__butt{
+    animation: scaleNav 1s ease forwards;
+}
+#navbar-sale__butt{
+    position: absolute;
+    left:0px;
+    top: 30px;
+    display:block;
+    list-style: none;
+    padding: 0px;
+    background-color:  rgb(245,245,245);
+    width: 250%;
+    padding-top: 20px;
+    transform: scaleY(0);
+    
+    
+}
+#navbar-sale__butt li{
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+@keyframes scaleNav{
+    0% {
+        transform: scaleY(0)
+      }
+      80% {
+        transform: scaleY(1.1)
+      }
+      100% {
+        transform: scaleY(1)
+      }
+    }
