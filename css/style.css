@@ -1,0 +1,131 @@
+body{
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+    font-family: Quicksand, sans-serif;
+}
+.top-bar__row{
+    background-color: rgb(243,243,243);
+    text-align: center;
+    color: #252A2b;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 40px;
+    padding: 40px auto;
+}
+.navbar_top-bar{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-flow: row wrap;
+    justify-content: auto;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.top-bar__logo{
+    flex-grow: 1;
+    margin-left: 10%;
+    float: left;
+    
+    
+}
+.top-bar__search{
+    flex-grow: 3;
+    
+    
+}
+.top-bar__sociallink{
+    flex-grow: 1;
+    /* margin-right: 10%; */
+    /* float: right; */
+    
+}
+.top-bar__logo img{
+    width:80px;
+    height: auto;
+    
+}
+.top-bar__search > div{
+    position: relative;
+    
+}
+input[type="text"]{
+    width: 80%;
+    height: 30px;
+    font-size: 14px;
+    padding-left: 20px;
+    font-family: Quicksand, sans-serif;
+    border: none;
+    background-color: rgb(245,245,245);
+    
+}
+.fa-search{
+    position: absolute;
+    left:75%;
+    line-height: 30px;
+    opacity: 0.5;
+}
+#social_icon{
+    display: flex;
+    justify-content: flex-start;
+    list-style: none;
+    
+}
+#social_icon li{
+    margin-right: 10px;
+    font-size: 30px;
+    color:#252A2b;
+}
+#social_icon li a i{
+    color:#252A2B;
+}
+.navbar-menu{
+    margin-top: 20px;
+}
+.navbar-menu>ul{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    list-style: none;
+    align-items: center;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+.navbar-menu ul li{
+    position: relative;
+}
+.navbar-menu ul li a{
+    text-decoration: none;
+    color: #252A2B;
+}
+hr{
+    opacity: 0.5;
+}
+.navbar-menu ul li a:hover{
+    color: red;
+}
+.navbar-menu ul li a::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: red;
+    position: absolute;
+    bottom: -10px;
+    left:0px
+    
+}
+.navbar-menu ul li:hover a::after{
+    animation-name:animation-navbar;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+@keyframes animation-navbar{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 100%;
+    }
+}
