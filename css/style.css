@@ -81,6 +81,7 @@ input[type="text"]{
 }
 .navbar-menu{
     margin-top: 20px;
+    position: relative;
 }
 .navbar-menu>ul{
     display: flex;
@@ -144,7 +145,7 @@ li#navbar-sale:hover #navbar-sale__butt{
     width: 250%;
     padding-top: 20px;
     transform: scaleY(0);
-    
+    z-index: 1000;
     
 }
 #navbar-sale__butt li{
@@ -153,13 +154,16 @@ li#navbar-sale:hover #navbar-sale__butt{
 }
 .navbar-sub__container{
     position: absolute;
-    left:-1000px;
+    left:-39VW;
     top: 30px;
-    width:10000%;
-    max-width: 3000px;
+    width:100vw;
+    
+    /* max-width: 2600px; */
     background-color: rgb(245,245,245);
-    display: block;
-    height: 400px;
+    display: block;    
+    padding-top: 20px;
+    padding-bottom: 40px;
+    transform: scaleY(0);
 
     
 }
@@ -168,6 +172,25 @@ li#navbar-sale:hover #navbar-sale__butt{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+.navbar-sub__col ul li a{
+    text-decoration: none;
+    font-size: 20px;
+}
+.navbar-sub__col ul li:nth-child(1) a{
+    font-weight: 400;
+    font-size: 30px;
+}
+.navbar-sub__col ul{
+    list-style: none;
+}
+#nav-product:hover .navbar-sub__container{
+    animation: scaleNav 300ms ease-in-out forwards;
+    transform-origin: top center;
+}
+.navbar-sub__container:hover {
+    transform: scaleY(1);
+
 }
 @keyframes scaleNav{
     0% {
@@ -180,3 +203,60 @@ li#navbar-sale:hover #navbar-sale__butt{
         transform: scaleY(1)
       }
     }
+.hero{
+    margin-top: 40px;
+    /* width: 100; */
+}
+#hero-banner{
+    position: relative;
+    height: fit-content;
+}
+#hero-banner img{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: Imgslide 1s ease-in-out forwards;
+    transform-origin: left center;
+    display: block;
+    /* display: none; */
+}
+#hero-banner_selec ul{
+    position: absolute;
+    top: 970px;
+    left: 47%;
+    z-index: 10000;
+    
+    /* list-style: none; */
+
+}
+#hero-banner_selec ul li{
+    display: inline-block;
+    border: 4px solid #ffffff;
+    /* border: 4px solid red; */
+    width: 8px;
+    height: 8px;
+    border-radius: 8px;
+    margin-left: 5px;
+    
+
+}
+/* img.hero-banner__Imgslider{
+    animation: Imgslide 1s ease-in-out forwards;
+    transform-origin: left center;
+    z-index: 1000;
+} */
+.active{
+    background-color:#ffffff ;
+} 
+@keyframes Imgslide{
+    0% {
+        left: 100%;
+    }
+    100%{
+        left:0;
+    }
+}
+
+
