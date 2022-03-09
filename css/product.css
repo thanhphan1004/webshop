@@ -1,0 +1,98 @@
+.product-container{
+    width: 100%;
+    display: block;    
+}
+/* .product-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+} */
+.menclothing-col__tiltle a{
+    text-align: center;
+    color:#2D3133;
+    font-size: 37px;
+    line-height: 41px;
+    font-weight: 500;
+    text-decoration: none;
+    display: block;
+    margin:0 auto 20px;
+
+}
+.menclothing-col__tiltle a:hover{
+    color:#6c6c70;
+}
+.product-container__menclothing{
+    width: 100%;
+    display: block; 
+}
+.menclothing-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 20px;
+}
+.menclothing-col{
+    width: 20%;
+}
+.menclothing-content__img{
+    width: 100%;
+    position: relative;
+}
+.menclothing-content__img img{
+    width: 100%;
+    height: auto;
+}
+.menclothing-content__price{
+    text-align: center;
+    line-height: 16px;
+    font-weight: 500;
+    margin-top: 0px;
+}
+.menclothing-content__price a{
+    display: block;
+    text-decoration: none;
+    color:#2D3133;
+    margin-top:5px;
+}
+.menclothing-content__price a:nth-child(2){
+    color: #f94c43;
+}
+.men-content__hidden{
+    background-color: #ffffff;
+    width: 100%;
+    display: block;
+    position: absolute;
+    bottom:0;
+    left:0;
+    display: block;
+    transform: scaleY(0);
+}
+.men-hidden__row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+.men-hidden__col{
+    width: 20%;
+    text-align: center;
+}
+.men-hidden__col span{
+    font-size: 12px;
+    text-align: center;
+}
+.menclothing-col:hover .men-content__hidden{
+    animation: productImg 300ms ease forwards;
+    transform-origin: bottom center;
+}
+@keyframes productImg{
+    0%{
+        transform: scaleY(0);
+    }
+    100%{
+        transform: scaleY(1);
+    }
+}
