@@ -1,3 +1,4 @@
+// slide img Banner
 nextImg = 0
 Imgslide()
 function Imgslide(){
@@ -27,3 +28,30 @@ function Imgslide(){
     setTimeout(Imgslide,2500);
     
 }
+// --------------------------
+
+function btnNext(){
+    newProduct = document.getElementsByClassName('newproduct');
+    newProduct[0].scrollLeft -=20;
+    
+}
+function btnPrev(){
+    newProduct = document.getElementsByClassName('newproduct');
+    newProduct[0].scrollLeft +=20
+}
+
+// newProduct = document.getElementsByClassName('newproduct');
+// btnNext = document.getElementsByClassName('next');
+// btnPrev = document.getElementsByClassName('previous');
+// if(btnNext.length>0){
+//     btnNext[0].addEventListener("click", function(){
+//         newProduct[0].scrollLeft -=20
+//     })
+// }
+// if(btnPrev.length>0){
+//     btnPrev[0].addEventListener("click", function(){
+//         newProduct[0].scrollLeft +=20
+//     })
+// }
+
+

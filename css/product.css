@@ -2,12 +2,9 @@
     width: 100%;
     display: block;    
 }
-/* .product-row{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-} */
+.product-row{
+    margin-bottom: 60px;
+}
 .menclothing-col__tiltle a{
     text-align: center;
     color:#2D3133;
@@ -96,3 +93,66 @@
         transform: scaleY(1);
     }
 }
+.menclothing-content__Select a{
+    text-decoration: none;
+    width: 60px;
+    height: 60px;
+    display: block;
+    border-radius: 60px;
+    background-color: #ffffff;
+    opacity: 0.4;
+    color:#5c5c5c;
+    font-size: 40px;
+    text-align: center;
+    z-index: 10;
+    padding-top: 4px;
+    box-sizing: border-box;
+      
+}
+/* new product slider */
+.newproduct{
+    max-width: 1500px;
+    min-height: 600px;
+    display: flex;   
+    overflow-x: hidden;
+    margin: 0 auto;
+    
+}
+.menclothing-content__Select{
+    position: relative;
+}
+.newproduct .menclothing-col{
+    max-width: 400px;
+    max-height: 400px;
+    display: block;
+    margin-left: 30px;
+    margin-right: 90px;
+}
+.newproduct .menclothing-content__img img{
+    width: 300px;
+    height: auto;
+
+}
+.newproduct .men-hidden__col img{
+    width: 100%;
+    height: auto;
+}
+.newproduct .men-content__hidden{
+    width: 100%;
+}
+.newproduct .menclothing-content__img{
+    width: 260px;
+}
+.previous{
+    position: absolute;
+    top: -400px;
+    left: 50px; 
+    z-index: 10;
+}
+.next{
+    position: absolute;
+    top: -400px;
+    right: 50px;  
+    z-index: 10;
+}
+/* ------------------------------------------- */
